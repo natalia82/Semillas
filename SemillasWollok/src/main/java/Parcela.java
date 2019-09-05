@@ -70,6 +70,10 @@ poder plantar una planta que se recibe por parámetro. El efecto que produce
 			plantas.add(planta);
 		}
 	}
+	
+	public boolean seAsociaBien(Planta planta) {
+		return true;
+	}
 
 
 }

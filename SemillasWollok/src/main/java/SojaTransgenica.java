@@ -19,7 +19,7 @@ public class SojaTransgenica extends Soja{
 	public boolean parcelaIdeal(Parcela parcela) {
 		return parcela.plantas.size() == 1;
 		
-	}
+	}    
 	
 
 }

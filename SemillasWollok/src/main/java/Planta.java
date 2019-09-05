@@ -25,6 +25,10 @@ public class Planta {
 	public float espacioQueOcupa() {
 		return 2;
 	}	
+	
+	public boolean parcelaIdeal(Parcela parcela) {
+		return true;
+	}
 
 }
 
