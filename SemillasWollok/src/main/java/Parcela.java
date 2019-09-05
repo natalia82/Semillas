@@ -63,8 +63,8 @@ poder plantar una planta que se recibe por parámetro. El efecto que produce
 	}
 	
 	public void plantarUnaPlanta(Planta planta) {
-		ArrayList<Planta> plantitas = this.plantas;
-		plantitas.add(planta);
+		/*ArrayList<Planta> plantitas = this.plantas;
+		plantitas.add(planta);*/
 		
 		if(plantas.size() < this.maximoPlantas() && planta.horasDeSol<= this.horasDeSol +2) {
 			plantas.add(planta);

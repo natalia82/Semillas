@@ -2,7 +2,7 @@
 public class Planta {
 	public int anioDeObtencion;
 	public float altura;
-	public float horasDeSol;
+	public float horasDeSol=0;
 	
 	
 	public Planta(int anio, float altura) {
@@ -23,7 +23,7 @@ public class Planta {
 	}
 	
 	public float espacioQueOcupa() {
-		return 2;
+		return 0;
 	}	
 	
 	public boolean parcelaIdeal(Parcela parcela) {

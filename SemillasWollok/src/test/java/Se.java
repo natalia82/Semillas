@@ -81,7 +81,27 @@ public class Se {
 			
 	}
 	
-	
+	@Test
+	public void test6() {
+		/*parcela con 4 plantas de menos 1.5mts de largo,sup 20mts, 
+		 * es parcela ideal para la menta y la quinoa q soporta 8hs de sol , pero no para la
+		 * soja ni la soja trans, por las horas de sol  */
+		Parcela p1 = new Parcela(20,1,8f);
+		Menta menta1 = new Menta(2007,1f);
+		Soja soja1 = new Soja(2009,0.6f);
+		Menta menta3 = new Menta(2007,0.3f);
+		Menta menta2 = new Menta(2008,1f);
+		SojaTransgenica soja2 = new SojaTransgenica(2008,0.3f);
+		Quinoa quinoa1 = new Quinoa(2007,0.2f,8);
+		p1.plantarUnaPlanta(menta1);
+		p1.plantarUnaPlanta(soja1);
+		p1.plantarUnaPlanta(menta3);
+		
+		assertEquals(false, soja1.parcelaIdeal(p1) );
+		assertEquals(true, menta1.parcelaIdeal(p1));
+		assertEquals(false, soja2.parcelaIdeal(p1));
+		assertEquals(true, quinoa1.parcelaIdeal(p1));	
+	}
 	 
 		
 	}
