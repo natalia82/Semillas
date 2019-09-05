@@ -1,5 +1,5 @@
 import java.util.Iterator;
-import java.util.ArrayList;
+
 
 public class Quinoa extends Planta {
 	float horasDeSol;
