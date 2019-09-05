@@ -97,8 +97,8 @@ public class Se {
 		p1.plantarUnaPlanta(soja1);
 		p1.plantarUnaPlanta(menta3);
 		
-		assertEquals(false, soja1.parcelaIdeal(p1) );
-		assertEquals(true, menta1.parcelaIdeal(p1));
+		assertEquals(false, soja1.parcelaIdeal(p1));
+		assertEquals(true, menta2.parcelaIdeal(p1));
 		assertEquals(false, soja2.parcelaIdeal(p1));
 		assertEquals(true, quinoa1.parcelaIdeal(p1));	
 	}

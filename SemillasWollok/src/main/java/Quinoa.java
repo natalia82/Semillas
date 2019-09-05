@@ -2,6 +2,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 public class Quinoa extends Planta {
+	float horasDeSol;
 
 	public Quinoa(int anio, float altura, int horasDeSol) {
 		super(anio, altura);

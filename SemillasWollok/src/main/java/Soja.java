@@ -31,7 +31,7 @@ public class Soja extends Planta {
 	}
 	
 	public boolean parcelaIdeal(Parcela parcela) {
-		return parcela.horasDeSol == this.horasDeSol;
+		return parcela.horasDeSol == this.horasDeSolToleradas();
 		
 	}
 	

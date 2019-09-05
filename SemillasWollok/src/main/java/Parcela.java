@@ -8,7 +8,7 @@ public class Parcela {
 	double ancho = 0;
 	double largo = 0;
 	float horasDeSol = 0;
-	ArrayList<Planta> plantas;
+	ArrayList<Planta> plantas = new ArrayList<Planta>();
 	String tipo = " ";
 	
 	public Parcela(double ancho, double largo, float horasDeSol) {
@@ -66,7 +66,7 @@ poder plantar una planta que se recibe por parámetro. El efecto que produce
 		/*ArrayList<Planta> plantitas = this.plantas;
 		plantitas.add(planta);*/
 		
-		if(plantas.size() < this.maximoPlantas() && planta.horasDeSol<= this.horasDeSol +2f) {
+		if(plantas.size() < this.maximoPlantas() && planta.horasDeSolToleradas() <= this.horasDeSol +2f) {
 			plantas.add(planta);
 		}
 	}

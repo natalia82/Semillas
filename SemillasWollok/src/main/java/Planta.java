@@ -2,7 +2,7 @@
 public class Planta {
 	public int anioDeObtencion = 2000;
 	public float altura = 0f;
-	public float horasDeSol=0f;
+	
 	
 	
 	public Planta(int anio, float altura) {
@@ -11,7 +11,7 @@ public class Planta {
 		
 	}
 	public float horasDeSolToleradas() {
-		return horasDeSol;
+		return 0f;
 	}
 	
 	public boolean esFuerte() {
