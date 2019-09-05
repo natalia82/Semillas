@@ -7,7 +7,7 @@ public class Menta extends Planta {
 	
 	@Override
 	public boolean daSemillas() {
-		return this.esFuerte() && this.altura > 400;
+		return this.esFuerte() || this.altura > 0.4f;
 	}
 	
 

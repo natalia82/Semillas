@@ -12,7 +12,7 @@ public class Soja extends Planta {
 	@Override
 	public float horasDeSolToleradas() {
 		 if (this.altura<0.5f) {return 6f;}
-		 	else if(this.altura<0.5f) {return 7f;}
+		 	else if(this.altura>0.5f && this.altura <1f)  {return 7f;}
 		 		else {return 9f;}
 	}
 	
@@ -22,13 +22,19 @@ public class Soja extends Planta {
 	
 	@Override
 	public boolean daSemillas() {
-		return this.esFuerte() &&  this.anioDeObtencion >2007 && this.altura>1;
+		return this.esFuerte() || this.anioDeObtencion >2007 && this.altura>1;
+	}
+	
+	@Override
+	public float espacioQueOcupa() {
+		return this.altura/2;
 	}
 	
 	public boolean parcelaIdeal(Parcela parcela) {
 		return parcela.horasDeSol == this.horasDeSol;
 		
 	}
+	
 	
 	
 	
