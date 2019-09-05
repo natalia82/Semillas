@@ -1,8 +1,8 @@
 
 public class Planta {
-	public int anioDeObtencion;
-	public float altura;
-	public float horasDeSol=0;
+	public int anioDeObtencion = 2000;
+	public float altura = 0f;
+	public float horasDeSol=0f;
 	
 	
 	public Planta(int anio, float altura) {

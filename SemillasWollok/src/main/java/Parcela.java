@@ -5,9 +5,9 @@ import java.util.Iterator;
 
 public class Parcela {
 	
-	double ancho;
-	double largo;
-	float horasDeSol;
+	double ancho = 0;
+	double largo = 0;
+	float horasDeSol = 0;
 	ArrayList<Planta> plantas;
 	String tipo = " ";
 	
