@@ -29,6 +29,10 @@ public class Planta {
 	public boolean parcelaIdeal(Parcela parcela) {
 		return true;
 	}
+	
+	public boolean seAsociaBien(Parcela parcela) {
+		return parcela.seAsociaBien(this);
+	}
 
 }
 
