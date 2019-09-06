@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.stream.Stream;
 import java.util.Iterator;
 
 
@@ -49,7 +50,7 @@ poder plantar una planta que se recibe por parámetro. El efecto que produce
 		}
 	}
 	
-	public boolean tieneComplicaciones() {
+	/*public boolean tieneComplicaciones() {
 		Iterator<Planta> p = plantas.iterator();
 		boolean hayComplicacion = false;
 		while(p.hasNext()) {
@@ -60,7 +61,16 @@ poder plantar una planta que se recibe por parámetro. El efecto que produce
 			
 		}
 		return hayComplicacion;
+	}*/
+	
+	public boolean tieneComplicaciones() {
+		boolean anymatch = plantas.stream()
+				.anyMatch(p -> p.horasDeSolToleradas()< this.horasDeSol);
+		
+		return anymatch;
 	}
+	
+	
 	
 	public void plantarUnaPlanta(Planta planta) {
 		/*ArrayList<Planta> plantitas = this.plantas;
