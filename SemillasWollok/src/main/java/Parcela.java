@@ -71,8 +71,8 @@ poder plantar una planta que se recibe por parámetro. El efecto que produce
 		}
 	}
 	
-	public void seAsociaBien(Planta planta) {
-		
+	public boolean seAsociaBien(Planta planta) {
+		return true;
 	}
 
 

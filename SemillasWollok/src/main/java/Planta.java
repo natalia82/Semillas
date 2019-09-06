@@ -30,6 +30,7 @@ public class Planta {
 		return true;
 	}
 	
+	
 	public boolean seAsociaBien(Parcela parcela) {
 		return parcela.seAsociaBien(this);
 	}

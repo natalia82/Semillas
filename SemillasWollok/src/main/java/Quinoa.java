@@ -1,5 +1,5 @@
 import java.util.Iterator;
-
+import java.util.stream.Stream;
 
 public class Quinoa extends Planta {
 	float horasDeSol;
@@ -26,7 +26,7 @@ public class Quinoa extends Planta {
 		return 0.5f;
 	}
 	
-	public boolean parcelaIdeal(Parcela parcela) {
+/*	public boolean parcelaIdeal(Parcela parcela) {
 		Iterator<Planta> p = parcela.plantas.iterator();
 		boolean esParcelaIdeal = true;
 		while(p.hasNext()) {
@@ -37,8 +37,16 @@ public class Quinoa extends Planta {
 		}
 		return esParcelaIdeal;
 		
-	}
+	}*/
+	public boolean parcelaIdeal(Parcela parcela) {
+	/*	Stream<Planta> streamPlantas = parcela.plantas.stream();*/
+				boolean  anymatch = parcela.plantas.stream()
+			    .anyMatch(p -> p.altura > 1.5f);
+				
+				return !anymatch;
 	
+		
+	}
 	
 	
 
